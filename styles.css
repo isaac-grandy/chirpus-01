@@ -1,80 +1,74 @@
-/* I struggled a bit with choosing selectors and orienting elements with 
-flexbox */
+body,
+ul,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
-}
-main h2 section {
-  flex-wrap: wrap;
-}
-header {
-  display: flex;
-  flex-direction: column;
+  background-color: #f9fafc;
+  padding: 20px;
 }
 
-header h1 {
-  margin: 0;
+h1 {
   font-size: 100%;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #69696a;
-  margin: 2px;
-  display: inline-block;
-}
-
-header nav ul {
-  padding-left: 0;
-  margin: 0;
 }
 
 li {
   list-style: none;
-  padding-top: 20px;
+}
+
+a {
+  color: #69696a;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: -10px;
 }
 
 .accent {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  width: 95%;
-  border: 2px solid black;
-  border-radius: 20px;
   background-color: black;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
   color: white;
-  padding: 10px;
-  margin: 0px 10px;
 }
 
-main ul {
-  margin-left: 0px;
-  padding-left: 0px;
+main h2 {
+  font-size: 32px;
+  margin-top: 20px;
 }
-p {
-  border-left: solid 5px #69696a;
-  padding-left: 10px;
-  margin-left: 20px;
+
+main p {
+  margin: 20px 0;
   color: #69696a;
-  width: 50%;
 }
-h3 {
-  font-size: 100%;
+
+.call-to-action-text {
+  border-left: 3px solid black;
+  padding-left: 10px;
 }
 
 footer {
-  padding: 0px;
-  display: inline;
-  height: 10%;
   position: fixed;
-  background-color: rgba(247, 193, 162, 0.7);
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(247, 193, 162, 0.7);
 }
 
-footer ul li {
-  display: inline;
-  float: right;
-  padding: 10px;
+footer p {
+  margin-left: 20px;
+}
+
+footer nav ul {
+  display: flex;
+  margin-right: 10px;
 }
